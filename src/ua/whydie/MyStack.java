@@ -29,7 +29,7 @@ public class MyStack {
             return;
         }
 
-        rear = (rear + 1) % capacity; // Циклический прирост индекса
+        rear = (rear + 1) % capacity; 
         queue[rear] = data;
         size++;
         System.out.println("Enqueued: " + data);
@@ -42,7 +42,7 @@ public class MyStack {
         }
 
         int data = queue[front];
-        front = (front + 1) % capacity; // Циклический прирост индекса
+        front = (front + 1) % capacity; 
         size--;
         System.out.println("Dequeued: " + data);
         return data;
